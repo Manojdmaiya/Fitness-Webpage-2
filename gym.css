@@ -273,3 +273,7 @@ footer{
    margin:0 px;
    }
 }
+
+footer > p{
+    padding-bottom:30px;
+}
