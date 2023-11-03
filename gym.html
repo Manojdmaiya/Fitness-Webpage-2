@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness tracker</title>
+    <link rel="stylesheet" href="gym.css">
+    
+</head>
+<body>
+    <header>
+           <form action="https://accounts.google.com/">
+            <div>
+                  <img src="https://marketplace.canva.com/EAFMWRbCRm0/1/0/800w/canva-red-black-minimalist-fitness-logo-g5eWYxy8H24.jpg" id = "gym_logo" alt="gym logo">
+                 
+               <nav id = "na1"> <a href="https://www.google.com/search?q=gym+classes&oq=gym+classes&gs_lcrp=EgZjaHJvbWUyCQgAEEUYORiABDIHCAEQABiABDIHCAIQABiABDIHCAMQABiABDIHCAQQABiABDIHCAUQABiABDIHCAYQABiABDIHCAcQABiABDIHCAgQABiABDIHCAkQABiABNIBCTQzNzRqMGoxNagCALACAA&sourceid=chrome&ie=UTF-8"> CLASSES </a>  
+                <nav id="na2">  <a href="https://www.google.com/search?q=gym+membership&sca_esv=578022390&ei=L2hAZdvBIumZ4-EPzcWL6AY&ved=0ahUKEwiblf-toJ-CAxXpzDgGHc3iAm0Q4dUDCBA&uact=5&oq=gym+membership&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIg5neW0gbWVtYmVyc2hpcDIKEAAYigUYsQMYQzIIEAAYigUYkQIyCBAAGIoFGJECMggQABiKBRiRAjIIEAAYigUYkQIyBRAAGIAEMgcQABiKBRhDMgUQABiABDIFEAAYgAQyBRAAGIAESKUyUK0iWKwwcAN4AZABAJgBtgKgAfwMqgEHMC44LjEuMbgBA8gBAPgBAcICChAAGEcY1gQYsAPCAg0QABhHGNYEGMkDGLADwgILEAAYigUYkgMYsAPCAg0QABiKBRiwAxhDGIsDwgIOEAAY5AIY1gQYsAPYAQHCAh8QLhiKBRjHARjRAxjIAxiwAxhDGIsDGNIDGKgD2AECwgIIEAAYgAQYsQPCAgoQLhiKBRixAxhDwgIKEAAYigUYQxiLA8ICCxAAGIAEGLEDGIsDwgIIEAAYgAQYiwPCAgcQABiABBgK4gMEGAAgQYgGAZAGEboGBggBEAEYCboGBggCEAEYCA&sclient=gws-wiz-serp">  MEMBERSHIP  </a> </nav> 
+                <nav id="na3">   <a href="https://www.google.com/search?q=gym+personal+training&sca_esv=578022390&ei=S2hAZdCeJbCc4-EPor678AY&ved=0ahUKEwiQ8K67oJ-CAxUwzjgGHSLfDm4Q4dUDCBA&uact=5&oq=gym+personal+training&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIhVneW0gcGVyc29uYWwgdHJhaW5pbmcyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBhAAGBYYHkihHlD_BljYHHACeAGQAQCYAY4CoAGiF6oBBjAuMTIuNbgBA8gBAPgBAcICExAAGEcY1gQYsAMYiwMYqAMYpgPCAgoQABhHGNYEGLADwgINEAAYRxjWBBjJAxiwA8ICCxAAGIoFGJIDGLADwgIIEAAYigUYkQLCAgcQABiKBRhDwgINEC4YigUYxwEYrwEYQ8ICCBAAGIAEGLED4gMEGAAgQYgGAZAGCg&sclient=gws-wiz-serp">   PERSONAL TRAINING  </a>  </nav> 
+                <nav id="na4">   <a href="https://www.google.com/search?q=gym+nutrition+counselling&oq=gym+nutrition+counselling&gs_lcrp=EgZjaHJvbWUyCwgAEEUYChg5GKABMgkIARAhGAoYoAHSAQg1ODAxajFqOagCALACAA&sourceid=chrome&ie=UTF-8"> NUTRITION COUNSELLING  </a>  </nav> 
+                <nav id="na5">     <a href="https://www.google.com/search?q=gym+offers&sca_esv=578022390&ei=i2hAZem-Komc4-EPsuOS0A0&ved=0ahUKEwipsPbZoJ-CAxUJzjgGHbKxBNoQ4dUDCBA&uact=5&oq=gym+offers&gs_lp=Egxnd3Mtd2l6LXNlcnAaAhgCIgpneW0gb2ZmZXJzMggQABiKBRiRAjIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABDIFEAAYgAQyBRAAGIAEMgUQABiABEioFlC2B1jYFHADeAGQAQCYAZ0CoAHED6oBAzItOLgBA8gBAPgBAcICChAAGEcY1gQYsAPCAg4QABiKBRixAxiDARiRAsICERAuGIAEGLEDGIMBGMcBGNEDwgIHEAAYigUYQ8ICDRAAGIoFGLEDGIMBGEPCAgsQABiABBixAxiDAcICDhAAGIAEGLEDGIMBGIsDwgIQEAAYigUYsQMYgwEYQxiLA8ICCBAAGIAEGIsDwgIKEAAYigUYQxiLA8ICCxAAGIoFGLEDGJECwgINEAAYigUYsQMYQxiLA8ICCxAAGIAEGLEDGIsDwgIKEAAYigUYsQMYQ8ICCBAAGIAEGLEDwgIOEAAYigUYsQMYyQMYkQLCAggQABiKBRiSA-IDBBgAIEGIBgGQBgY&sclient=gws-wiz-serp">  OFFERS  </a>  </nav> 
+                <nav id="na6">        <a href="https://www.google.com/search?q=gym+nearest+location&oq=gym+nearest+location&gs_lcrp=EgZjaHJvbWUyBggAEEUYOTIJCAEQABgKGIAEMgkIAhAAGAoYgAQyCQgDEAAYChiABDIJCAQQABgKGIAEMgkIBRAAGAoYgAQyCQgGEAAYChiABDIJCAcQABgKGIAEMgkICBAAGAoYgAQyCQgJEAAYChiABNIBCDQ2NzFqMWo5qAIAsAIA&sourceid=chrome&ie=UTF-8">LOCATION  </a>  </nav> 
+                <button id="but">Sign In</button>
+                </div>
+            </form>
+
+    </header>
+  
+       <main>
+             <img src="https://images.pexels.com/photos/841130/pexels-photo-841130.jpeg?auto=compress&cs=tinysrgb&w=1600" class="lifting" alt="Gym man">
+
+             <h1 id="join">JOIN OUR GYM TODAY </h1>
+             <form action="" class="formm">
+                  <input name="username" type="text" placeholder="Name" id="username" required>
+                  <input  name="email" type="email" placeholder="Email" id="email" required >
+                  <input   name="phone.no" type="tel" placeholder="Phone No." id="phn" required>
+                  <select  name="choose"  id="choose"> 
+                    <option value="Free 1 day pass">Choose one</option>
+                       <option value="Free 1 day pass">Free 1 day pass</option>
+                       <option value="Compilmentary personal training session">Compilmentary personal training session</option>
+                       <option value="Compilmentary power yoga class">Compilmentary power yoga class</option>
+                       <option value="Compilmentary Indoor Spin class/cycling class">Compilmentary Indoor Spin class/cycling class</option>
+                     
+                  </select>
+                    <button id="send">Send</button>
+
+             </form>
+             
+             <p id="dtext">Fitness Tracker is the perfect place to achieve your fitness goals, no matter what your starting point is. We offer a wide range of classes and equipment, as well as a friendly and supportive community to help you stay motivated.</p>
+             <img src="gym_2.jpg" id="threadmill" alt>
+             <p id="dtext"> <b> Our internationally certified gym </b> trainers help accomplish your fitness and weight loss goals, quicker. They aid in guiding you through a balanced combination of <b>cardio, aerobic exercise, strength, and weight training </b> with the help of the latest training techniques, technology, and high-end fitness equipment. Our personal gym trainers help you turn the <b>IMPOSSIBLE</b> to <b>I'M POSSIBLE.</b></p>
+          </main>
+
+
+
+    <footer>
+        <h1 id="insta">FOLLOW US ON INSTAGRAM</h1>
+        <a href="https://www.instagram.com/explore/tags/fitness/?hl=en"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/600px-Instagram_logo_2022.svg.png" id="instagram"></a>
+  
+           <section class="navv">
+          <div name="dv">   <nav> <a href="https://www.google.com/search?q=gym" id="foot1">About</a> </nav> </div>
+        <div name="dv" >   <nav>  <a href="https://www.google.com/search?q=gym" id="foot1" >Location</a>  </nav>  </div>
+        <div name="dv" >    <nav>  <a href="https://www.google.com/search?q=gym" id="foot1" >Membership policy</a> </nav> </div>  
+            <div name="dv" >     <nav>  <a href="https://www.google.com/search?q=gym" id="foot1" >Terms and conditions</a>  </nav> </div> 
+                <div name="dv" >    <nav>  <a href="https://www.google.com/search?q=gym" id="foot1" >Careers at Waves gym</a> </nav> </div>  
+                                  <h1 id="tq">Thank you for visiting our website</h1> 
+                </section> 
+
+
+    </footer>
+</body>
+</html>
